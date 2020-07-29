@@ -979,9 +979,9 @@ ABOUT
 
 /*
 
-=====================
+=========================================================
 STYLE SWITCHER FOR DEMO
-=====================
+=========================================================
 
 */
 #style-switch-button {
@@ -1008,11 +1008,13 @@ STYLE SWITCHER FOR DEMO
   color: #252525;
 }
 
-/* ========================================= 
+/* 
+
+========================================================= 
    
       THEMING OF THE BOOTSTRAP COMPONENTS           
 
-   ========================================= 
+========================================================= 
    
     1 - NAVBAR
     2 - BUTTONS
@@ -1026,6 +1028,7 @@ STYLE SWITCHER FOR DEMO
     10 - DROPDOWNS
    
 */
+
 /*
  * 1. NAVBAR
  */
@@ -2805,4 +2808,45 @@ code {
 
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #222;
+}
+
+/*
+
+=========================================================
+QR CODE
+=========================================================
+
+*/
+
+/*
+*  Wechat Qrcode
+*/
+.qr-code-wx {
+    position: relative;
+}
+ 
+.qr-code-wx img.wxqr-img {
+  position: absolute;
+  z-index: 99;
+  top: 50px;
+  left: 7px;
+  width: 10rem;
+  max-width: none;
+  height: 10rem;
+  border-top: solid 2px #c2c2c2;
+  border-left: solid 2px #c2c2c2;
+  border-bottom: solid 2px #2c2c2c;
+  border-right: solid 2px #2c2c2c;
+  transform: scale(0);
+  transform-origin: top left;
+  opacity: 0;
+  -webkit-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+ 
+}
+ 
+.qr-code-wx:hover img.wxqr-img {
+    transform: scale(1);
+    opacity: 1;
 }
