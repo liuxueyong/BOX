@@ -753,6 +753,11 @@ ABOUT
   margin-bottom: 2rem;
 }
 
+.box-masonry {
+  border: solid 2px #2c2c2c;
+  box-sizing: content-box;
+}
+
 .box-masonry h4 {
   font-size: 1rem;
   line-height: 1.5;
