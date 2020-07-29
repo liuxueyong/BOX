@@ -28,7 +28,6 @@ body {
   } 
 } 
 
-
 html,
 body {
   overflow-x: hidden;
@@ -180,6 +179,13 @@ button {
 .icon.brand-four {
   border-color: #feee7d;
   color: #feee7d;
+}
+
+body {
+  background-image:
+	  linear-gradient(90deg, rgba(180, 180, 180, 0.15) 10%, rgba(0, 0, 0, 0) 10%),
+      linear-gradient(rgba(180, 180, 180, 0.15) 10%, rgba(0, 0, 0, 0) 10%); 
+  background-size: 10px 10px;
 }
 
 /*
