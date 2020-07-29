@@ -2822,31 +2822,29 @@ QR CODE
 *  Wechat Qrcode
 */
 .qr-code-wx {
-    position: relative;
+  position: relative;
 }
  
 .qr-code-wx img.wxqr-img {
   position: absolute;
   z-index: 99;
-  top: 50px;
-  left: 7px;
+  top: -1px;
+  left: -1px;
   width: 10rem;
   max-width: none;
   height: 10rem;
-  border-top: solid 2px #c2c2c2;
-  border-left: solid 2px #c2c2c2;
-  border-bottom: solid 2px #2c2c2c;
-  border-right: solid 2px #2c2c2c;
+  border-radius: 19px;
+  border: solid 1.5px #006fc6;
   transform: scale(0);
   transform-origin: top left;
   opacity: 0;
-  -webkit-transition: all .4s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
  
 }
  
 .qr-code-wx:hover img.wxqr-img {
-    transform: scale(1);
-    opacity: 1;
+  transform: scale(1);
+  opacity: 1;
 }
