@@ -30,36 +30,33 @@
   <!-- Tweaks for older IEs --><!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  <!-- 加载完成后自动刷新 -->
+  <!-- 加载完成后自动刷新 
   <script>
     window.onload=function(){
        if (location.href.indexOf("?xyz=")<0){
  　　      location.href=location.href+"?xyz="+Math.random();
        }
     }
-  </script>
+  </script>-->
 </head>
 <body>
   <div id="all">
     <div class="container-fluid">
-      <div class="row row-offcanvas row-offcanvas-left"> 
+      <div class="row row-offcanvas row-offcanvas-left">
 		  
-		  
- <div id="loadBar01" class="loadBar">
-        <div>
-             <span class="percent">
-                <i></i>
-             </span>
-        </div>
-        <span class="percentNum">0%</span>
-    </div>
+		  <div class="loading">
+	<div class="pic">
+		<span></span>
+		<b>0%</b>
+	</div>
+</div>
 	  
         <!-- 左侧导航栏 -->
         <div id="sidebar" class="col-md-4 col-lg-3 sidebar-offcanvas">
           <div class="sidebar-content">
             <h1 class="sidebar-heading"> <a href="index.html">阿狸の收纳盒</a></h1>
-            <p class="sidebar-p">Text1</p>
-            <p class="sidebar-p">Text2</p>
+            <p class="sidebar-p">1</p>
+            <p class="sidebar-p">2</p>
             <ul class="sidebar-menu">
                 <!-- Link-->
                 <li class="sidebar-item"><a href="index.html" class="sidebar-link active">一盒 / Box</a></li>

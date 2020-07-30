@@ -1,75 +1,12 @@
- body
-        {
-            font-family: Thoma, Microsoft YaHei, 'Lato', Calibri, Arial, sans-serif;
-        }
- 
-        #content
-        {
-            margin: 120px auto;
-            width: 80%;
-        }
 
-
-
-        .loadBar
-        {
-            width: 100px;
-            height: 5px;
-            border: 0.3px solid #212121;
-            position: relative;
-        }
- 
-        .loadBar div
-        {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
- 
-        .loadBar div span, .loadBar div i
-        {
-            box-shadow: inset 0 -2px 6px rgba(0, 0, 0, .4);
-            width: 0%;
-            display: block;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 20px;
-        }
- 
-        .loadBar div i
-        {
-            width: 100%;
-            -webkit-animation: move .8s linear infinite;
-            background: -webkit-linear-gradient(left top, #7ed047 0%, #7ed047 25%, #4ea018 25%, #4ea018 50%, #7ed047 50%, #7ed047 75%, #4ea018 75%, #4ea018 100%);
-            background-size: 40px 40px;
-        }
- 
-        .loadBar .percentNum
-        {
-            position: absolute;
-            top: 100%;
-            right: 10%;
-            padding: 1px 15px;
-            border-bottom-left-radius: 16px;
-            border-bottom-right-radius: 16px;
-            border: 1px solid #222;
-            background-color: #222;
-            color: #fff;
- 
-        }
- 
-        @-webkit-keyframes move
-        {
-            0%
-            {
-                background-position: 0 0;
-            }
-            100%
-            {
-                background-position: 40px 0;
-            }
-        }
+	.loading{width: 100%;height: 100%;position: fixed;top:0;left: 0;z-index: 100;background-color: #fff;}
+	.loading .pic{width: 100px;height: 100px;position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;font-size: 30px;text-align: center;line-height: 100px;}
+	.loading .pic span{display: block;width: 80px;height: 80px;position: absolute;top: 10px;left: 10px;border-radius: 50%;box-shadow: 0 3px 0 #666;animation: rotate 1s infinite linear;-webkit-animation: rotate 1s infinite linear;
+	}
+	@-webkit-keyframes rotate{
+		0%{-webkit-transform: rotate(0deg);}
+		100%{-webkit-transform: rotate(360deg);}
+	}
+	@keyframes rotate{
+		100%{transform: rotate(360deg);}
+	}
