@@ -755,7 +755,7 @@ ABOUT
 }
 
 .box-masonry {
-  border: solid 1.5px #2c2c2c;
+  outline: solid 2.5px #2c2c2c;
   box-sizing: content-box;
 }
 
