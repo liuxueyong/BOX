@@ -44,7 +44,7 @@
         <!-- 左侧导航栏 -->
         <div id="sidebar" class="col-md-4 col-lg-3 sidebar-offcanvas">
           <div class="sidebar-content">
-            <h1 class="sidebar-heading"> <a href="index.html">阿狸の收纳盒</a></h1>
+            <h1 class="sidebar-heading"> <a href="index.html">狸の收纳盒</a></h1>
             <p class="sidebar-p">Text1</p>
             <p class="sidebar-p">Text2</p>
             <ul class="sidebar-menu">
@@ -56,9 +56,12 @@
                 <li class="sidebar-item"><a href="contact.html" class="sidebar-link">杂项 / More</a></li>
             </ul>
             <p class="social">
-				<a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-weixin"></i></a>
-				<a href="#" data-animate-hover="pulse" class="external"><i class="fa fa-qq"></i></a>
-				<a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
+				<a href="#" data-animate-hover="pulse" class="external qr-code-wx">
+					<img class="wxqr-img" src="img/qrcode/wechat.jpg" alt="Wechat-QRcode"><i class="fa fa-weixin"></i></a>
+				<a href="tencent://message/?uin=1422190647&Site&Menu=yes" data-animate-hover="pulse" class="external">
+					<i class="fa fa-qq"></i></a>
+				<a href="mailto:alpha@lxy.plus" data-animate-hover="pulse" class="email">
+					<i class="fa fa-envelope"></i></a></p>
             <div class="copyright text-center text-md-left">
               <p class="credit">Copyright &copy; 2020 LXY<br>All Right Reserved</p>
               
@@ -74,7 +77,7 @@
             <h1 class="small-navbar-heading" id="today"><script src="js/today.js" type="text/x-javascript"></script></h1>
           </div>
 			
-          <div class="grid row">	
+          <div class="grid row" style="font-family: PixelFont;">	
 			  
 		<!-- 随机语录库 -->	  
         <script>
@@ -116,12 +119,24 @@
                 <div class="box-masonry-text text-pixel"> 
                   <h4><script>document.write(arr[r]);</script></h4>
                   <div class="box-masonry-desription">
-                    <p style="font-family: PixelFont;" id="ymd"><script src="js/to-date.js" type="text/x-javascript"></script></p>
+                    <p style="font-family: PixelFont; text-align: right;" id="ymd"><script src="js/to-date.js" type="text/x-javascript"></script></p>
                   </div>
                 </div>
               </div>
             </div>
-		
+			  
+			<!-- Adobe Creative Cloud 快速入门指南 -->
+            <div class="col-md-6 col-lg-3 grid-item"> 
+              <div class="box-masonry"> <a href="https://adobe.lxy.plus" title="" class="box-masonry-image"><img src="img/portfolio/acc-banner.jpg" alt="" class="img-fluid"></a>
+                <div class="box-masonry-text"> 
+                  <h4> <a href="https://adobe.lxy.plus">Adobe Creative Cloud<br>快速入门指南</a></h4>
+                  <div class="box-masonry-desription">
+                    <p>重新设计 Adobe CC 系列软件装机流程，简化从注册到安装步骤，降低学习门槛。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+			  		
 			<!-- Hi Alix -->
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="https://lxy.plus" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/X-HiQR.gif" alt="" class="img-fluid"></a>
@@ -129,7 +144,7 @@
                   <h4>LXY.PLUS</h4>
                   <div class="box-masonry-desription">
                     <p>主站点迁移计划<br><br>工程代号：ONE-BOX<br>起始时间：2020/7/20<br>预计上线：2020/9/10<br>***
-						<br>当前进度：规划新版主站<br>更新规划：页面加载过渡动画<br>最后更新：2020/7/24</p>
+						<br>当前进度：规划新版主站<br>更新规划：站点风格修改<br>最后更新：2020/8/1</p>
                   </div>
                 </div>
               </div>
@@ -137,53 +152,42 @@
 			  
             <!-- 2020 毕业设计 --> 
             <div class="col-md-6 col-lg-3 grid-item"> 
-              <div class="box-masonry"> <a href="https://design.lxy.plus" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/business-card-26.jpg" alt="" class="img-fluid"></a>
+              <div class="box-masonry"> <a href="https://design.lxy.plus" title="" class="box-masonry-image"><img src="img/portfolio/design-loft.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-text"> 
-                  <h4> <a href="https://design.lxy.plus">环艺毕设：<br>北欧复式loft</a></h4>
+                  <h4> <a href="https://design.lxy.plus">环艺毕业设计作品</a></h4>
                   <div class="box-masonry-desription">
                     <p>现代北欧风格设计，<br>全景VR 体验超清全屋漫游，每一秒都真实。<br>&nbsp;<br>DESIGNED BY LXY / 2020 #</p>
                   </div>
                 </div>
               </div>
             </div>
-			  
-			<!-- Adobe 快速入门指南 -->
-            <div class="col-md-6 col-lg-3 grid-item"> 
-              <div class="box-masonry"> <a href="https://adobe.lxy.plus" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/gravity-paper.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-text"> 
-                  <h4> <a href="https://adobe.lxy.plus">Adobe<br>快速入门指南</a></h4>
-                  <div class="box-masonry-desription">
-                    <p>重新设计 Adobe CC 系列软件下载安装流程，简化从注册到安装步骤，降低学习门槛。</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-			  
-			<!-- 瀑布信息流 -->
+
+			<!-- 极简生活清单 -->
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> 
                 <div class="box-masonry-text"> 
-                  <h4> <a href="detail.html">Item without image</a></h4>
-                  <div class="box-masonry-desription">
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.  A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                  <h4>极简生活清单</h4>
+                  <div class="box-masonry-desription" style="line-height: 2em;font-size: 85%">
+                    <p><ol>
+                    <li>不盲从,不跟风</li>
+                    <li>专一做事,认真学习</li>
+                    <li>不买不需要的物品</li>
+                    <li>及时清理信息,不堆积</li>
+					<li>不做无效社交</li>
+					<li>早睡早起,适量运动</li>
+                    </ol></p>
                   </div>
                 </div>
               </div>
             </div>
 			  
-			<!-- 瀑布信息流 -->
+			<!-- 微信订阅号 AD Banner -->
             <div class="col-md-6 col-lg-3 grid-item"> 
-              <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/business-card.jpg" alt="" class="img-fluid"></a>
-                <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
-                  <h4>Name of the work 5</h4>
-                  <div class="box-masonry-desription">
-                    <p>Fifth abundantly made Give sixth hath. Cattle creature i be don't them.</p>
-                  </div>
-                </div>
+              <div class="box-masonry"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzUzNDYxMTM1OQ==&scene=124#wechat_redirect"><img src="img/portfolio/wxad-banner.jpg" alt="关注微信订阅号「ALIX」" class="img-fluid"></a>
               </div>
             </div>
 			  
-			<!-- 瀑布信息流 -->
+			<!-- 瀑布信息流 --
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> 
                 <div class="box-masonry-text"> 
@@ -195,7 +199,7 @@
               </div>
             </div>
 			  
-			<!-- 瀑布信息流 -->
+			<!-- 瀑布信息流 --
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/label-clothes.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-text"> 
@@ -207,7 +211,7 @@
               </div>
             </div>
 			  
-			<!-- 瀑布信息流 -->
+			<!-- 瀑布信息流 --
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/ipad-air-2.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-text"> 
@@ -219,7 +223,7 @@
               </div>
             </div>
 			  
-			<!-- 瀑布信息流 -->
+			<!-- 瀑布信息流 --
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay with-hover-icon"><img src="img/portfolio/envelope-brand.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-text"> 
@@ -231,7 +235,7 @@
               </div>
             </div>
 			
-			<!-- 瀑布信息流 -->
+			<!-- 瀑布信息流 --
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/trifold.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
@@ -243,7 +247,7 @@
               </div>
             </div>
 			  
-			<!-- 瀑布信息流 -->
+			<!-- 瀑布信息流 --
             <div class="col-md-6 col-lg-3 grid-item"> 
               <div class="box-masonry"> <a href="detail.html" title="" class="box-masonry-image with-hover-overlay"><img src="img/portfolio/paper-presentation.jpg" alt="" class="img-fluid"></a>
                 <div class="box-masonry-hover-text-header"> <a href="detail.html" class="tile-link">  </a>
@@ -344,6 +348,15 @@ function slideDownStep3() {
     }
 }
 	</script>
+
+  <!-- 加载完成后自动刷新 -->
+  <script>
+    window.onload=function(){
+       if (location.href.indexOf("?xyz=")<0){
+ 　　      location.href=location.href+"?xyz="+Math.random();
+       }
+    }
+  </script>
 
 </body>
 </html>
