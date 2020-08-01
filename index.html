@@ -27,20 +27,20 @@
   <!-- Tweaks for older IEs --><!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  <!-- 加载完成后自动刷新 -->
-  <script>
-    window.onload=function(){
-       if (location.href.indexOf("?xyz=")<0){
- 　　      location.href=location.href+"?xyz="+Math.random();
-       }
-    }
-  </script>
 </head>
-<body>
+<body>	
+	
   <div id="all">
-    <div class="container-fluid">
+    <div class="container-fluid" id="sd">
       <div class="row row-offcanvas row-offcanvas-left"> 
 	  
+            <div id="sd1">
+                <p>松开后刷新</p>
+            </div>
+            <div id="sd2">
+                <p><img src="/images/loading.gif" alt="玩命加载中.."/></p>
+            </div>
+		  
         <!-- 左侧导航栏 -->
         <div id="sidebar" class="col-md-4 col-lg-3 sidebar-offcanvas">
           <div class="sidebar-content">
@@ -273,6 +273,77 @@
   <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="vendor/masonry-layout/masonry.pkgd.min.js"></script>
   <script src="js/front.js"></script>
+	
+	<script>
+	function slideDownStep1(dist) {
+    var sd1 = document.getElementById("sd1"),
+        sd2 = document.getElementById("sd2");
+    sd2.style.display = "none";
+    sd1.style.display = "block";
+    sd1.style.height = 1 - parseInt(dist) + "px";
+}
+function slideDownStep2() {
+    var sd1 = document.getElementById("sd1"),
+        sd2 = document.getElementById("sd2");
+    sd1.style.display = "none";
+    sd1.style.height = "20px";
+    sd2.style.display = "block";
+}
+function slideDownStep3() {
+    var sd1 = document.getElementById("sd1"),
+        sd2 = document.getElementById("sd2");
+    sd1.style.display = "none";
+    sd2.style.display = "none";
+}
+	</script>
+	<script>
+	function kt_touch(contentId, way) {
+    var _start = 0,
+        _end = 0,
+        _content = document.getElementById(contentId);
+    _content.addEventListener("touchstart", touchStart, false);
+    _content.addEventListener("touchmove", touchMove, false);
+    _content.addEventListener("touchend", touchEnd, false);
+    function touchStart(event) {
+        event.preventDefault();
+        if (!event.touches.length) return;
+        var touch = event.touches[0];
+        if (way == "x") {
+            _start = touch.pageX;
+        } else {
+            _start = touch.pageY;
+        }
+    }
+
+    function touchMove(event) {
+        event.preventDefault();
+        if (!event.touches.length) return;
+        var touch = event.touches[0];
+
+        if (way == "x") {
+            _end = (_start - touch.pageX);
+        } else {
+            _end = (_start - touch.pageY);
+            if (_end < 0) {
+                slideDownStep1(_end);
+            }
+        }
+    }
+
+    function touchEnd(event) {
+        if (_end > 0) {
+            //左滑或上滑
+            slideDownStep2();
+            slideDownStep3();
+            getReplyList(++curPage);
+        }else{
+            slideDownStep2();
+            slideDownStep3();
+            getReplyList();
+        } //右滑下滑
+    }
+}
+	</script>
 
 </body>
 </html>
